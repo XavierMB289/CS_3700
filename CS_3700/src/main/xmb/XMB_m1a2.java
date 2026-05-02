@@ -2,9 +2,9 @@ package main.xmb;
 
 import javax.swing.JOptionPane;
 
-public class XMB_mod_1_ass_2 {
+public class XMB_m1a2 {
 	
-	public XMB_mod_1_ass_2(String[] args) {
+	public XMB_m1a2(String[] args) {
 		int x = Integer.parseInt(JOptionPane.showInputDialog("Input First Number: "));
 		int y = Integer.parseInt(JOptionPane.showInputDialog("Input Second Number: "));
 		String[] func_text = {"+", "-", "*", "/"};
@@ -15,7 +15,7 @@ public class XMB_mod_1_ass_2 {
 	}
 	
 	public static void main(String[] args) {
-		new XMB_mod_1_ass_2(args);
+		new XMB_m1a2(args);
 	}
 
 }

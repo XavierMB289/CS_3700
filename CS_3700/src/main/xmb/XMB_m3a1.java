@@ -2,14 +2,14 @@ package main.xmb;
 
 import java.util.Scanner;
 
-public class XMB_mod_3_ass_1 {
+public class XMB_m3a1 {
 	
 	Scanner scan;
 	
 	int x = Integer.MIN_VALUE;
 	int y = x;
 	
-	public XMB_mod_3_ass_1() {
+	public XMB_m3a1() {
 		scan = new Scanner(System.in);
 		int userInput = -1;
 		while(userInput != 5) {
@@ -110,6 +110,6 @@ public class XMB_mod_3_ass_1 {
 	}
 	
 	public static void main(String[] args) {
-		new XMB_mod_3_ass_1();
+		new XMB_m3a1();
 	}
 }

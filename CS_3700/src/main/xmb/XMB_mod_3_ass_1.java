@@ -6,12 +6,15 @@ public class XMB_mod_3_ass_1 {
 	
 	Scanner scan;
 	
-	int x = Integer.MIN_VALUE, y = Integer.MIN_VALUE;
+	int x = Integer.MIN_VALUE;
+	int y = x;
 	
 	public XMB_mod_3_ass_1() {
+		scan = new Scanner(System.in);
 		int userInput = -1;
 		while(userInput != 5) {
 			System.out.println("1 - Enter two (2) numbers (x and y)\n2 - Print all numbers between x and y\n3 - Find the average of all numbers between x and y\n4 - Find all prime numbers between x and y\n5 - Exit");
+			userInput = scan.nextInt();
 			switch(userInput) {
 				case 1:
 					enterNums();
@@ -37,7 +40,7 @@ public class XMB_mod_3_ass_1 {
 	 * This is so that the functions below actually work.
 	 */
 	private void enterNums() {
-		while(x != y && x + 1 != y && x > y) {
+		while(x == y || x + 1 == y || x > y) {
 			System.out.println("X Value: ");
 			x = scan.nextInt();
 			System.out.println("Y Value: ");
@@ -106,4 +109,7 @@ public class XMB_mod_3_ass_1 {
 		}
 	}
 	
+	public static void main(String[] args) {
+		new XMB_mod_3_ass_1();
+	}
 }

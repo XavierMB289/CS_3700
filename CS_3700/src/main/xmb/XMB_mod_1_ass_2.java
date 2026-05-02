@@ -13,7 +13,7 @@ public class XMB_mod_1_ass_2 {
 			System.out.println(String.format("%s %s %s = %g", x, func_text[i], y, func[i]));
 		}
 	}
-
+	
 	public static void main(String[] args) {
 		new XMB_mod_1_ass_2(args);
 	}

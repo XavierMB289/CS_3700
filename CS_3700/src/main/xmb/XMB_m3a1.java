@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class XMB_m3a1 {
 	
-	Scanner scan;
+	private Scanner scan;
 	
-	int x = Integer.MIN_VALUE;
-	int y = x;
+	private int x = Integer.MIN_VALUE;
+	private int y = x;
 	
 	public XMB_m3a1() {
 		scan = new Scanner(System.in);
@@ -30,6 +30,7 @@ public class XMB_m3a1 {
 					break;
 			}
 		}
+		scan.close();
 	}
 	/**
 	 * Allows the user to enter 2 numbers.

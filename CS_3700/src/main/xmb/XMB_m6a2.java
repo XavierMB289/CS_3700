@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class XMB_m6a2 {
 	
+	@SuppressWarnings("unused")
 	public XMB_m6a2() {
 		Car car1 = new Car("Pontaic", "Torrent", 2008, 1500);
 		CustomCar car2 = new CustomCar("Hyundai", "Elantra", 3002, 443320);

@@ -29,8 +29,8 @@ public class BF_Test {
 				
 			}
 		);
+		System.out.print("Make sure this prints 'Hello World!': ");
 		engine.execute();
-		//MAKE SURE IT PRINTS "Hello World!"
 	}
 	
 }

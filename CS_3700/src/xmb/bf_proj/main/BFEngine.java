@@ -23,7 +23,10 @@ public class BFEngine {
 		inputFunction = inputFun;
 		loopData = new BFLoopData();
 	}
-
+	
+	/**
+	 * Executes the BrainFuck code that was loaded from the file.
+	 */
 	public void execute() {
 		//Populating Pointers
 		System.out.println("Locating Looping Pointers in BF CODE:");
@@ -77,10 +80,18 @@ public class BFEngine {
 		System.out.println("Interpretation Complete");
 	}
 	
+	/**
+	 * Calls the pointer.toString() and prints it.
+	 */
 	public void printCurrentData() {
 		System.out.println(pointer.toString());
 	}
 	
+	/**
+	 * Reads ONLY BrainFuck code from a file.
+	 * @param relativeFilePath Relative path to the code.
+	 * @return the BrainFuck code
+	 */
 	private String readCodeFromFile(String relativeFilePath) {
 		String ret = "";
 		File file = new File(relativeFilePath);

@@ -10,7 +10,7 @@ OPERAND is ==, >, <
 OPERATOR is +, -, *, /, %
 
 "Commands":
- - <VARIABLE_NAME> = <INT | INPUT> [<OPERATOR> <INT | INPUT>]
+ - <VARIABLE_NAME> = <INT | "INPUT"> [<OPERATOR> <INT | INPUT>]
  - - Sets a variable equal to an int or an input
  - IF <VARIABLE_NAME> <OPERAND> <VARIABLE_NAME | INT | INPUT> THEN
  - - Compares 2 things

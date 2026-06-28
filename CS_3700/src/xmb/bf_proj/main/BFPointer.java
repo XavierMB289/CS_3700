@@ -2,7 +2,14 @@ package xmb.bf_proj.main;
 
 import java.util.Arrays;
 
-public class BFPointer {
+interface Pointer{
+	void moveLeft();
+	void moveRight();
+	void increment();
+	void decrement();
+}
+
+public class BFPointer implements Pointer{
 	
 	private int pointer = 0;
 	private int[] data;
@@ -14,7 +21,7 @@ public class BFPointer {
 		Arrays.fill(data, 0);
 	}
 	
-	public BFPointer() {
+	public BFPointer() { //Polymorphism
 		this(-1);
 	}
 	

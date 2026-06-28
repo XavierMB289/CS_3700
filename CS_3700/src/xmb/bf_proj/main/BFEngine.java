@@ -9,10 +9,10 @@ import java.util.function.Supplier;
 
 public class BFEngine {
 	
-	private BFPointer pointer;
+	private final BFPointer pointer;
 	private String bfCode;
-	private Consumer<Integer> outputFunction;
-	private Supplier<Integer> inputFunction;
+	private final Consumer<Integer> outputFunction;
+	private final Supplier<Integer> inputFunction;
 	
 	private BFLoopData loopData;
 	
